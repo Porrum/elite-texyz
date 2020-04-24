@@ -1,0 +1,46 @@
+\documentclass{scrartcl}
+
+\usepackage{elite-texyz}
+
+\title{elite-texyz}
+\subtitle{A \LaTeX -package for and from SE students}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Usage}
+The aim of this package is to provide students of the Elite Graduate Program Software Engineering with \LaTeX -commands useful for creating documents for the Program's several courses.\\
+\medskip
+To use the package in your \LaTeX -document use the command \verb|\usepackage{elite-texyz}|.
+
+\section{Commands}
+\subsection{General}
+\begin{tabular}{p{7cm}|l|l|c}
+	\hline
+	Description & Code & Example & Result\\
+	\hline
+	declaring a natural number named $n$ & \verb|\ninN| & & $\ninN$ \\
+	declaring a arbitrarilly named natural number & \verb|\inN{#1}| & \verb|\inN{i}| & $\inN{i}$ \\
+	\hline
+\end{tabular}
+
+\subsection{Modelling, Specification and Verification of Reactive Systems}
+\begin{tabular}{p{7cm}|l|l|c}
+	\hline
+	Description & Code & Example & Result\\
+	\hline
+	set of all possible traces on LTS-signature $\Sigma$ & \verb|\traces| & & $\traces$ \\
+	finite run extendable into & \verb|\extinto| & & $\extinto$ \\
+	weak transition in CCS & \verb|\xRightarrow{#1}| & \verb|\xRightarrow{a}| & $\xRightarrow{a}$ \\
+	\hline
+\end{tabular}
+
+\end{document}

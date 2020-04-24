@@ -1,0 +1,22 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{elite-texyz}[2020/04/24 LaTeX package providing commands useful for students of the Elite Graduate Program Software Engineering]
+
+\RequirePackage{amsmath}
+\RequirePackage{amsthm}
+\RequirePackage{amssymb}
+
+
+%---GENERAL---%
+%shortcut for declaring some natural number n
+\newcommand{\ninN}{n\in\mathbb{N}}
+%shortcut for declaring some arbitrarily named natural number
+\newcommand{\inN}[1]{#1\in\mathbb{N}}
+
+
+%---MSV---%
+%set of all possible traces on LTS-signature Sigma
+\newcommand{\traces}{\Sigma^\omega}
+%finite trace extendable into
+\newcommand{\extinto}{\in_\omega}
+%CCS: weak transistion
+\newcommand{\xRightarrow}[2][]{\ext@arrow 0359\Rightarrowfill@{#1}{#2}}
