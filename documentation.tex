@@ -23,23 +23,24 @@ To use the package in your \LaTeX -document use the command \verb|\usepackage{el
 
 \section{Commands}
 \subsection{General}
-\begin{tabular}{p{7cm}|l|l|c}
+\begin{tabular}{p{6cm}|l|l|c}
 	\hline
-	Description & Code & Example & Result\\
+	Description & Command & Example & Result\\
 	\hline
-	declaring a natural number named $n$ & \verb|\ninN| & & $\ninN$ \\
-	declaring a arbitrarilly named natural number & \verb|\inN{#1}| & \verb|\inN{i}| & $\inN{i}$ \\
+	declaring a natural number $n$ & \verb|\ninN| & & $\ninN$ \\
+	declaring an arbitrarilly named natural number & \verb|\inN{#1}| & \verb|\inN{i}| & $\inN{i}$ \\
+	cartesian product over multiple sets & \verb|\bigcartesian| & \verb|\bigcartesian_{i=1}^n S_i| & $\bigcartesian_{i=1}^n S_i$\\
 	\hline
 \end{tabular}
 
 \subsection{Modelling, Specification and Verification of Reactive Systems}
-\begin{tabular}{p{7cm}|l|l|c}
+\begin{tabular}{p{6cm}|l|l|c}
 	\hline
-	Description & Code & Example & Result\\
+	Description & Command & Example & Result\\
 	\hline
-	set of all possible traces on LTS-signature $\Sigma$ & \verb|\traces| & & $\traces$ \\
+	set containing all possible traces on LTS-signature $\Sigma$ & \verb|\traces| & & $\traces$ \\
 	finite run extendable into & \verb|\extinto| & & $\extinto$ \\
-	weak transition in CCS & \verb|\xRightarrow{#1}| & \verb|\xRightarrow{a}| & $\xRightarrow{a}$ \\
+	weak transition in CSS & \verb|\xRightarrow{#1}| & \verb|\xRightarrow{a}| & $\xRightarrow{a}$ \\
 	\hline
 \end{tabular}
 
